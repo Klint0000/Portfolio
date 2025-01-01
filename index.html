@@ -17,9 +17,26 @@
     <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+SC:wght@100..900&family=Encode+Sans+Semi+Condensed:wght@100;200;300;400;500;600;700;800;900&family=Henny+Penny&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oswald:wght@200..700&family=Outfit:wght@100..900&family=Pacifico&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Rubik+Puddles&family=Young+Serif&display=swap" rel="stylesheet">
 </head>
 <body>
+    <header>
+        <nav class="navbar">
+                <p>Klint</p>
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="#">Home</a></li>
+                    <li class="nav-item"><a href="#1">About Me</a></li>
+                    <li class="nav-item"><a href="#2">Hobbies</a></li>
+                    <li class="nav-item"><a href="#3">Contact</a></li>
+                    <li class="nav-item"><a href="#4">My Projects</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+        </nav>
+    </header>
     <div class="container">
         <div class="introduction">
-            <video src="me.mp4" autoplay muted loop class="first"></video>
+            <video src="videos/me.mp4" autoplay muted loop class="first"></video>
             <span>
             <svg viewBox="0 0 400 130">
                 <text x="12.5%" y="80%">WeLcomE To My</text>
@@ -32,13 +49,13 @@
          </span>
         </div>
         <div class="about">
-            <h2>Want to know me?</h2>
+            <h2 id="1">Want to know me?</h2>
             <img src="myfirstpics.jpg" alt="my picture" class="first-img">
             <p class="first">I am a proud student of Obafemi Awolowo University, currently pursuing my studies in the Chemical Engineering department. I am passionate about exploring new ideas and challenging myself to grow academically and personally.</p>
-            <img src="mySecondpics.jpg" alt="my picture" class="second-img">
+            <img src="/mySecondpics.jpg" alt="my picture" class="second-img">
             <p class="second">I have a deep love for coding, where I enjoy creating solutions and building projects that make a difference. Reading is another favorite pastime of mine; it allows me to broaden my knowledge and immerse myself in new perspectives. Music plays a big role in my life too—I enjoy listening to songs that inspire and relax me.</p>
         </div>
-        <div>
+        <div id="2">
             <p>Additionally, I love playing basketball, which keeps me active and teaches me teamwork and discipline.</p>
 
         </div>
@@ -48,12 +65,20 @@
         <div>
             <p>Together, these activities fuel my passion for learning and personal growth, shaping me into the person I am today.</p>
         </div>
-        <div>
+        <div id="3" class="Contact">
             <h2>Check me out on the following social media platforms</h2>
-            <a href="https://wa.me/+2349040990548"><i class="fa-brands fa-square-whatsapp"></i>WhatsApp</a><br>
-            <a href="mailto:okporclinton33@gmail.com"><i class="fa-solid fa-square-envelope"></i>E-Mail</a><br>
+            <a href="https://wa.me/+2349040990548"><i class="fa-brands fa-square-whatsapp"></i>WhatsApp</a><br><br>
+            <a href="mailto:okporclinton33@gmail.com"><i class="fa-solid fa-square-envelope"></i>E-Mail</a><br><br>
             <a href="https://www.linkedin.com/in/clinton-o-75a9762ba"><i class="fa-brands fa-linkedin"></i>LinkedIn</a>
         </div>
+        <h1 class="pro">Project</h1>
+        <div class="project" id="4">
+            <div class="blue"><a href="https://recipe-page-main-five-peach.vercel.app/project1.html" class="blue">Simple Omelette Recipe</a></div>
+            <div class="blue"><a href="https://project-beige-tau.vercel.app/cal.html" class="blue">Basic Calculator</a></div>
+            <div class="blue"><a href="https://stella-autos.vercel.app/" class="blue">Stell Auto</a></div>
+        </div>
     </div>
+
+    <script src="index.js"></script>
 </body>
 </html>
